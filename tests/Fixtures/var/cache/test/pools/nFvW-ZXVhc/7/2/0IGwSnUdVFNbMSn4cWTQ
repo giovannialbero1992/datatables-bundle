@@ -1,0 +1,114 @@
+<?php //%255BTests%255CFixtures%255CAppBundle%255CEntity%255CPerson%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Tests\\Fixtures\\AppBundle\\Entity\\Person',
+            ],
+            'namespace' => [
+                'Tests\\Fixtures\\AppBundle\\Entity',
+            ],
+            'rootEntityName' => [
+                'Tests\\Fixtures\\AppBundle\\Entity\\Person',
+            ],
+            'subClasses' => [
+                [
+                    'Tests\\Fixtures\\AppBundle\\Entity\\Employee',
+                ],
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'inheritanceType' => [
+                2,
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'id' => true,
+                        'columnName' => 'id',
+                    ],
+                    'firstName' => [
+                        'fieldName' => 'firstName',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'first_name',
+                    ],
+                    'lastName' => [
+                        'fieldName' => 'lastName',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'last_name',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'first_name' => 'firstName',
+                    'last_name' => 'lastName',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'firstName' => 'first_name',
+                    'lastName' => 'last_name',
+                ],
+            ],
+            'discriminatorValue' => [
+                'person',
+            ],
+            'discriminatorMap' => [
+                [
+                    'person' => 'Tests\\Fixtures\\AppBundle\\Entity\\Person',
+                    'employee' => 'Tests\\Fixtures\\AppBundle\\Entity\\Employee',
+                ],
+            ],
+            'discriminatorColumn' => [
+                [
+                    'name' => 'dtype',
+                    'type' => 'string',
+                    'length' => 255,
+                    'fieldName' => 'dtype',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'person',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

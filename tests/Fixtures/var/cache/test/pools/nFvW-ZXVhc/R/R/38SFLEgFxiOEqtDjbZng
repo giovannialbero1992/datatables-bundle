@@ -1,0 +1,168 @@
+<?php //%255BTests%255CFixtures%255CAppBundle%255CEntity%255CEmployee%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Tests\\Fixtures\\AppBundle\\Entity\\Employee',
+            ],
+            'namespace' => [
+                'Tests\\Fixtures\\AppBundle\\Entity',
+            ],
+            'rootEntityName' => [
+                'Tests\\Fixtures\\AppBundle\\Entity\\Person',
+            ],
+            'parentClasses' => [
+                [
+                    'Tests\\Fixtures\\AppBundle\\Entity\\Person',
+                ],
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'inheritanceType' => [
+                2,
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'id' => true,
+                        'columnName' => 'id',
+                        'inherited' => 'Tests\\Fixtures\\AppBundle\\Entity\\Person',
+                        'declared' => 'Tests\\Fixtures\\AppBundle\\Entity\\Person',
+                    ],
+                    'firstName' => [
+                        'fieldName' => 'firstName',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'first_name',
+                        'inherited' => 'Tests\\Fixtures\\AppBundle\\Entity\\Person',
+                        'declared' => 'Tests\\Fixtures\\AppBundle\\Entity\\Person',
+                    ],
+                    'lastName' => [
+                        'fieldName' => 'lastName',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'last_name',
+                        'inherited' => 'Tests\\Fixtures\\AppBundle\\Entity\\Person',
+                        'declared' => 'Tests\\Fixtures\\AppBundle\\Entity\\Person',
+                    ],
+                    'employedSince' => [
+                        'fieldName' => 'employedSince',
+                        'type' => 'datetime',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'employed_since',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'first_name' => 'firstName',
+                    'last_name' => 'lastName',
+                    'employed_since' => 'employedSince',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'firstName' => 'first_name',
+                    'lastName' => 'last_name',
+                    'employedSince' => 'employed_since',
+                ],
+            ],
+            'discriminatorValue' => [
+                'employee',
+            ],
+            'discriminatorMap' => [
+                [
+                    'person' => 'Tests\\Fixtures\\AppBundle\\Entity\\Person',
+                    'employee' => 'Tests\\Fixtures\\AppBundle\\Entity\\Employee',
+                ],
+            ],
+            'discriminatorColumn' => [
+                [
+                    'name' => 'dtype',
+                    'type' => 'string',
+                    'length' => 255,
+                    'fieldName' => 'dtype',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'employee',
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'company' => [
+                        'fieldName' => 'company',
+                        'joinColumns' => [
+                            [
+                                'name' => 'company_id',
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'employees',
+                        'targetEntity' => 'Tests\\Fixtures\\AppBundle\\Entity\\Company',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Tests\\Fixtures\\AppBundle\\Entity\\Employee',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'company_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'company_id' => 'company_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'company_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];
